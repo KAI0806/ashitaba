@@ -1,0 +1,333 @@
+@charset "UTF-8";
+
+html {
+    scroll-behavior: smooth;
+    font-size: 0.5208vw;
+}
+
+body{
+    margin: 0;
+}
+
+h1{
+    font-size: 6rem;
+    color: white;
+}
+
+h2{
+    font-size: 5rem;
+    font-weight: 600;
+    color: #20303f;
+}
+
+p{
+    color: #393939;
+    font-size: 2rem
+}
+
+a{
+    color: #393939;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+a:hover{
+    color: #edcd20;
+    transition: all .2s ease-in-out;
+}
+
+ul{
+    margin: 0;
+}
+
+li{
+    list-style: none;
+}
+
+/* ヘッダー */
+
+header{
+    background: #1d2d3c;
+    padding: 4rem;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: 100%;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 4rem;
+}
+
+header nav ul li{
+    margin-left: 3rem;
+}
+
+header nav ul li a{
+    font-size: 2rem;
+    color: white;
+}
+
+/* キービジュアル */
+
+.kv{
+    width: 100%;
+    text-align: center;
+    padding: 22rem 0;
+}
+
+.kv h2{
+    color: white;
+}
+
+#video-area{
+    position: fixed;
+    z-index: -1;/*最背面に設定*/
+    top: 0;
+    right:0;
+    left:0;
+    bottom:0;
+    overflow: hidden;
+}
+
+#video {
+    /*天地中央配置*/
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*縦横幅指定*/
+    width: 177.9vw; /* 16:9 の幅→16 ÷ 9＝ 177.77% */
+    height: 56.2vw; /* 16:9の幅 → 9 ÷ 16 = 56.25% */
+    min-height: 100%;
+    min-width: 100%;
+}
+
+/* サービス */
+
+#service{
+    background: white;
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#service .wrap{
+    max-width: 1440px;
+}
+
+#service .wrap h2{
+    text-align: center;
+    position: relative;
+    padding-bottom: 1.3rem;
+}
+
+#service .wrap h2::after{
+    position: absolute;
+    content: "";
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    bottom: 0;
+    height: 1rem;
+    width: 10rem;
+    background: #edcd20;
+}
+
+#service .wrap .service_content{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+#service .wrap .service_content div{
+    margin: 1rem;
+    width: 40%;
+    background: #f7f7f7;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+#service .wrap .service_content div img{
+    width: 100%;
+}
+
+/* about */
+
+#about{
+    margin: 0;
+    background: url("img/about_bg.jpg") center right/cover no-repeat;
+}
+
+#about .about_conotent{
+    background: #f7f7f7;
+    width: 50%;
+    padding: 2rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#about .about_conotent h2{
+    padding-right: 1rem;
+    position: relative;
+    padding-bottom: 1.3rem;
+}
+
+#about .about_conotent h2::after{
+    position: absolute;
+    content: "";
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    bottom: 0;
+    height: 1rem;
+    width: 10rem;
+    background: #edcd20;
+}
+
+#about .about_conotent .about_inner{
+    width: 50%;
+}
+
+#about .about_conotent .about_inner .about_table{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: -10rem;
+}
+
+#about .about_conotent .about_inner .about_table .table_left{
+    width: 30%;
+}
+
+/* 実績 */
+
+#achiev{
+    margin: 0;
+    background: white;
+    padding: 5rem 0;
+}
+
+#achiev h2{
+    font-size: 4rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    position: relative;
+}
+
+#achiev h2::after{
+    position: absolute;
+    content: "";
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    bottom: 0;
+    height: 1rem;
+    width: 15rem;
+    background: #edcd20;
+}
+
+#achiev .wrap{
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#achiev .wrap p{
+    width: 80%;
+    margin: 3rem auto 10rem;
+}
+
+#achiev .wrap div{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    max-width: 1440px;
+}
+
+#achiev .wrap div img{
+    margin: 1rem;
+    max-width: 48rem;
+}
+
+/* お問い合わせ */
+
+#contact{
+    margin: 0;
+    background: white;
+    padding: 5rem 0;
+}
+
+#contact .wrap{
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact h2{
+    padding-bottom: 1.5rem;
+    text-align: center;
+    position: relative;
+}
+
+#contact h2::after{
+    position: absolute;
+    content: "";
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    bottom: 0;
+    height: 1rem;
+    width: 15rem;
+    background: #edcd20;
+}
+
+#contact .wrap .contact_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 5rem;
+}
+
+#contact .wrap .contact_inner div{
+    width: 40%;
+}
+
+#contact .wrap .contact_inner div h3{
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+#contact .wrap .contact_inner div h4{
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+#contact .wrap .contact_inner div p{
+    font-size: 1.5rem;
+}
+
+.copylight{
+    background: white;
+    margin: 0;
+    text-align: right;
+    font-size: 1.5rem;
+}
