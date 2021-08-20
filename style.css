@@ -307,7 +307,7 @@ header nav ul li a{
     margin-top: 5rem;
 }
 
-#contact .wrap .contact_inner div{
+#contact .wrap .contact_inner .conotact_flex{
     width: 40%;
 }
 
@@ -317,12 +317,85 @@ header nav ul li a{
 }
 
 #contact .wrap .contact_inner div h4{
+    position: relative;
     font-size: 2rem;
     font-weight: 300;
+    margin-top: 10rem;
+    padding-top: 10rem;
+}
+
+#contact .wrap .contact_inner div h4::before{
+    position: absolute;
+    content: "";
+    height: 1rem;
+    width: 15rem;
+    top: 0;
+    left: 0;
+    background: #edcd20;
+
 }
 
 #contact .wrap .contact_inner div p{
+    font-size: 2rem;
+}
+
+#contact .wrap .contact_inner .conotact_flex .join{
+    margin-top: 5rem;
+}
+
+/* フォーム */
+
+#contact .wrap .contact_inner .conotact_flex .formrun .form_content{
+    margin: 2rem 0;
+}
+
+label{
+    font-size: 2rem;
+    color: #393939;
+}
+
+input{
+    width: calc(100% - 1rem);
+    height: 3rem;
+    background: #f7f7f7;
+    font-size: 2rem;
+    padding: .5rem;
+    border: 1px solid #1d2d3c;
+}
+
+::placeholder {
+    color: #4d6370;
+}
+  /* 旧Edge対応 */
+  ::-ms-input-placeholder {
+    color: #4d6370;
+}
+  /* IE対応 */
+  :-ms-input-placeholder {
+    color: #4d6370;
+}
+
+textarea{
+    width: calc(100% - 1rem);
+    height: 10rem;
+    background: #f7f7f7;
+    font-size: 2rem;
+    padding: .5rem;
+    border: 1px solid #1d2d3c;
+}
+
+button{
+    background-color: #1d2d3c;
+    color: #edcd20;
+    font-size: 2rem;
+    padding: 1.5rem 5rem;
+    display: block;
+    margin: 0 0 0 auto;
+}
+
+.error{
     font-size: 1.5rem;
+    color: red;
 }
 
 .copylight{
