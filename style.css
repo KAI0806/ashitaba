@@ -44,6 +44,10 @@ li{
     list-style: none;
 }
 
+.sp_only{
+    display: none;
+}
+
 /* ヘッダー */
 
 header{
@@ -392,6 +396,14 @@ button{
     padding: 1.5rem 5rem;
     display: block;
     margin: 0 0 0 auto;
+    border: none;
+    transition: all .2s ease-in-out;
+}
+
+button:hover{
+    background-color: #edcd20;
+    color: #1d2d3c;
+    transition: all .2s ease-in-out;
 }
 
 .error{
@@ -404,4 +416,333 @@ button{
     margin: 0;
     text-align: right;
     font-size: 1.5rem;
+}
+
+@media screen and (min-width:768px) and (max-width:1439px){
+    html{
+        font-size: 1vw;
+    }
+
+    #video{
+        width: auto;
+        height: 100vh;
+    }
+
+    #about .about_conotent .about_inner{
+        width: 70%;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+    h1{
+        font-size: 15rem;
+    }
+    
+    h2{
+        font-size: 12rem;
+        font-weight: 600;
+    }
+    
+    p{
+        font-size: 7.6rem
+    }
+
+    .pc_only{
+        display: none;
+    }
+
+    .sp_only{
+        display: block;
+    }
+
+    header{
+        position: relative;
+        height: 25rem;
+        overflow: hidden;
+    }
+
+    header nav ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav ul li a{
+        font-size: 9rem;
+    }
+
+    #nav{
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        right: -100%;
+        top: 0;
+        background: #1d2d3c;
+        transition: all .7s ease-in-out;
+        overflow: hidden;
+    }
+
+    #nav ul{
+        height: 100%;
+    }
+    
+    #nav ul li{
+        list-style-type: none;
+        color: white;
+        margin: 10rem auto;
+    }
+
+    #hamburger {
+        position: absolute;
+        top: 7rem;
+        right: 20rem;
+        width: 20rem;
+        height: 15rem;
+        transition: all 1s ease-out;
+    }
+
+    .inner_line {
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 20rem;
+        height: 3px;
+        background-color: white;
+        transition: all 1s ease-out;
+        border-radius: 4px;
+    }
+
+    #line1 {
+        top: 0;
+    }
+
+    #line2 {
+        top: 50%;
+    }
+
+    #line3 {
+        bottom: 0px;
+    }
+
+    .in{
+        transform: translateX(-100%);
+    }
+
+    .line_1,.line_2,.line_3{
+        background: white;
+    }
+
+    .line_1 {
+        transform: translateY(6.5rem) rotate(-45deg);
+        top: 0;
+    }
+
+    .line_2 {
+        opacity: 0;
+    }
+    
+    .line_3 {
+        transform: translateY(-6.5rem) rotate(45deg);
+        bottom: 0;
+    }
+
+    /* kv */
+
+
+    .kv{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .kv h2{
+        margin-bottom: 100rem;
+    }
+
+    .kv a img{
+        width: 40rem;
+    }
+
+    #video-area{
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    #video{
+        width: auto;
+        height: 100vh;
+        min-width: unset;
+        min-height: unset;
+        overflow: hidden;
+    }
+
+    /* サービス */
+
+    #service .wrap h2{
+        padding-bottom: 5rem;
+    }
+
+    #service .wrap h2::after{
+        width: 20rem;
+        height: 2rem;
+    }
+
+    #service .wrap .service_content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #service .wrap .service_content div{
+        width: 75%;
+        margin: 10rem;
+    }
+
+    /* about */
+    #about .about_conotent h2{
+        padding-bottom: 5rem;
+    }
+
+    #about .about_conotent h2::after{
+        width: 20rem;
+        height: 2rem;
+    }
+
+    #about .about_img{
+        width: 100vw;
+    }
+
+    #about .about_conotent{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #about .about_conotent .about_inner{
+        width: 75%;
+    }
+
+    #about .about_conotent .about_inner .about_table{
+        margin-left: 0;
+    }
+
+    /* 実績 */
+
+    #achiev h2{
+        font-size: 7rem;
+        padding-bottom: 5rem;
+        text-align: center;
+        position: relative;
+    }
+
+    #achiev h2::after{
+        width: 40rem;
+        height: 2rem;
+    }
+    
+    #achiev .wrap p{
+        width: 80%;
+        margin: 3rem auto 10rem;
+    }
+    
+    #achiev .wrap div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #achiev .wrap div img{
+        margin: 10rem;
+        max-width: 75%;
+    }
+
+    /* コンタクト */
+    #contact h2{
+        padding-bottom: 5rem;
+    }
+    
+    #contact h2::after{
+        height: 2rem;
+        width: 20rem;
+    }
+    #contact .wrap .contact_inner{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contact .wrap .contact_inner .conotact_flex{
+        width: 75%;
+    }
+    
+    #contact .wrap .contact_inner div h3{
+        font-size: 10rem;
+    }
+    
+    #contact .wrap .contact_inner div h4{
+        font-size: 8rem;
+    }
+    
+    #contact .wrap .contact_inner div h4::before{
+        height: 2rem;
+        width: 20rem;
+    }
+    
+    #contact .wrap .contact_inner div p{
+        font-size: 6.5rem;
+    }
+    
+    #contact .wrap .contact_inner .conotact_flex .join{
+        margin-top: 5rem;
+    }
+
+    /* フォーム */
+    #contact .wrap .contact_inner .conotact_flex .formrun .form_content{
+        margin: 2rem 0;
+    }
+    
+    label{
+        font-size: 6.5rem;
+    }
+    
+    input{
+        height: 10rem;
+        font-size: 6.5rem;
+    }
+    
+    ::placeholder {
+        color: #4d6370;
+    }
+      /* 旧Edge対応 */
+      ::-ms-input-placeholder {
+        color: #4d6370;
+    }
+      /* IE対応 */
+      :-ms-input-placeholder {
+        color: #4d6370;
+    }
+    
+    textarea{
+        height: 40rem;
+        font-size: 6.5rem;
+    }
+    
+    button{
+        font-size: 6.5rem;
+        padding: 2rem 6rem;
+    }
+    
+    .error{
+        font-size: 6.5rem;
+    }
+    
+    .copylight{
+        font-size: 5rem;
+    }
 }
