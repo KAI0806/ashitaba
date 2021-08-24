@@ -13,7 +13,7 @@ function hamburger(){
 
   (function() {
   const target     = document.getElementById('video-area'),
-        height     = 1000;
+        height     = 800;
   let offset       = 0,
       lastPosition = 0,
       ticking      = false;
