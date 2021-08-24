@@ -457,7 +457,7 @@ button:hover{
     }
 
     header{
-        position: relative;
+        position: fixed;
         height: 25rem;
     }
 
