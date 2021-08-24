@@ -97,6 +97,11 @@ header nav ul li a{
     left:0;
     bottom:0;
     overflow: hidden;
+    opacity: 1;
+}
+
+.is_fixed{
+    opacity: 0;
 }
 
 #video {

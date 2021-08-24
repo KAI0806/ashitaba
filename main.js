@@ -11,7 +11,7 @@ function hamburger(){
     hamburger();
   });
 
-function() {
+  (function() {
   const target     = document.getElementById('video-area'),
         height     = 56;
   let offset       = 0,
@@ -21,14 +21,14 @@ function() {
   function onScroll() {
     if (lastPosition > height) {
       if (lastPosition > offset) {
-        target.classList.add('head-animation');
+        target.classList.add('is_fixed');
       } else {
-        target.classList.remove('head-animation');
+        target.classList.remove('is_fixed');
       }
       offset = lastPosition;
     }
   }
-  
+
   window.addEventListener('scroll', function(e) {
     lastPosition = window.scrollY;
     if (!ticking) {
@@ -39,4 +39,4 @@ function() {
       ticking = true;
     }
   });
-});
+})();
