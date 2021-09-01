@@ -9,10 +9,8 @@ body{
     margin: 0;
 }
 
-h1{
-    font-size: 10rem;
-    color: white;
-    font-family: "HGP行書体", "MS P明朝", "MS PMincho", serif;
+h1 img{
+    height: 13rem;
 }
 
 h2{
@@ -440,8 +438,8 @@ button:hover{
 }
 
 @media screen and (max-width:767px) {
-    h1{
-        font-size: 15rem;
+    h1 img{
+        height: 16rem;
     }
     
     h2{
@@ -564,7 +562,7 @@ button:hover{
     }
 
     .kv h2{
-        margin-bottom: 100rem;
+        margin-bottom: 50rem;
     }
 
     .kv a img{
