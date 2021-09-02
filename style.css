@@ -173,7 +173,7 @@ header nav ul li a{
 
 #about{
     margin: 0;
-    background: url("img/about_bg.jpg") center right/cover no-repeat;
+    background: url("img/about_bg.jpg") 40rem center/cover no-repeat;
 }
 
 #about .about_conotent{
